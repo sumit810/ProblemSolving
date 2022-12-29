@@ -38,6 +38,11 @@ public class FindItineraryDetails {
             }
         }
 
+        if (startPoint == null) {
+            System.out.println("Invalid Input");
+            return;
+        }
+
         String start = mainMap.get(startPoint);
         while (start != null) {
             System.out.print(startPoint+ "->" + start + ", ");
