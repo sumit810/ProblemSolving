@@ -43,11 +43,11 @@ public class FindItineraryDetails {
             return;
         }
 
-        String start = mainMap.get(startPoint);
-        while (start != null) {
-            System.out.print(startPoint+ "->" + start + ", ");
-            startPoint = start;
-            start = mainMap.get(start);
+        String to = mainMap.get(startPoint);
+        while (to != null) {
+            System.out.print(startPoint+ "->" + to + ", ");
+            startPoint = to;
+            to = mainMap.get(to);
         }
     }
 
